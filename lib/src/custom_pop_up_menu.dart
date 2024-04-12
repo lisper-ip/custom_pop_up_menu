@@ -219,12 +219,12 @@ class _CustomPopupMenuState extends State<CustomPopupMenu> {
         child: widget.child,
         onTap: () {
           if (widget.pressType == PressType.singleClick && _canResponse) {
-            _controller?.showMenu();
+            _showMenu();
           }
         },
         onLongPress: () {
           if (widget.pressType == PressType.longPress && _canResponse) {
-            _controller?.showMenu();
+            _showMenu();
           }
         },
       ),
